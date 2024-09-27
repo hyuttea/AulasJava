@@ -5,9 +5,9 @@ public class Exercicio01 {
         int idade = 20;
         double altura = 180;
         double peso = 78;
-        System.out.println("sua idade" + idade);
-        System.out.println("sua altura" + altura "cm");
-        System.out.println("seu peso" + peso);
+        System.out.println("sua idade é" + idade "anos");
+        System.out.println("sua altura é" + altura "cm");
+        System.out.println("seu peso é" + peso "kg");
 
     }
 }
