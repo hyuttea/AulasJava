@@ -1,5 +1,5 @@
 package Aula02.Exemplos;
-    public class Exemplo5 {
+    public class Exemplo05 {
         public static void main(String[] args) {
             int num1 = 0;
             System.out.println("num1 = " + num1);

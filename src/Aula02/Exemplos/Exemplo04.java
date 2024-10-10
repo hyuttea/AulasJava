@@ -1,5 +1,5 @@
 package Aula02.Exemplos;
-    public class Exemplo4 {
+    public class Exemplo04 {
         public static void main(String[] args) {
             int num1 = 3, num2 = 5, num3 = 2, num4 = 6;
             boolean resposta;
