@@ -23,6 +23,8 @@ public class Exemplo03 {
         resposta = num1 != num2;
         System.out.println( num1+ "!=" + num2 + "=" + resposta);
 
+        ;
+
 
 
 
