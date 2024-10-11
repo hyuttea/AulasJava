@@ -4,21 +4,21 @@ import java.util.Arrays;
 
 public class Exemplos {
     public static void main(String[] args) {
-    int AnoNasc;
+    int anoNasc;
     double peso;
     char sexo;
     boolean destro;
     float altura = 1.8f;
     byte idade = 19;
 
-    AnoNasc = 2005;
+    anoNasc = 2005;
     peso = 48.0;
 
     char letra = 65;
     System.out.println(letra);
 
-    AnoNasc++;
+    anoNasc++;
 
-        System.out.println(AnoNasc);
+        System.out.println(anoNasc);
     }
 }

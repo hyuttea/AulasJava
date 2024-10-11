@@ -3,7 +3,8 @@ package Aula02.Exemplos;
 import java.sql.SQLOutput;
 import java.util.Scanner;
 
-public class Exemplo08 {
+public class
+Exemplo08 {
 
     public static void main(String[] args) {
         String texto = "Este texto esta na primeira linha\nabule\naaaaaaaa\nkkkkkkkkkkkkk" + "\n\tEste texto esta na terceira linha e com tabulação";
@@ -17,7 +18,7 @@ public class Exemplo08 {
         System.out.println("Digite seu nome: ");
         String nome = scanner.nextLine();
 
-        System.out.println("Seu nome é " +nome+ "e sua idade é" +idade);
+        System.out.println("Seu nome é: " +nome+ "e sua idade é: " +idade);
 
         System.out.println(texto);
     }
