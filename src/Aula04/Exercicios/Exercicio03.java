@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Exercicio03 {
     public static void main(String[] args) {
+
         Scanner scanner = new Scanner(System.in);
         int opcao;
 
@@ -12,20 +13,22 @@ public class Exercicio03 {
         System.out.println("\t2- Alimentos: ");
         System.out.println("\t3- Vestuario: ");
 
-        int codPro;
+        int codPro = 5050;
+
 
         codPro = scanner.nextInt();
 
         switch (codPro) {
-            case "Eletronicos":
-                System.out.println("");
+            case 1 :
+                System.out.println("Código Promocional é: Senai10%");
                 break;
-            case "Alimentos":
-                System.out.println("");
+            case 2 :
+                System.out.println("Código Promocional é: Senai30%");
                 break;
-            case "Vestuarios":
-                System.out.println("");
+            case 3 :
+                System.out.println("Código Promocional é: Senai5%");
                 break;
+
 
         }
     }
