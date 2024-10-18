@@ -19,8 +19,11 @@ public class Exemplo03 {
             System.out.println("Adulto");
         } else if (idade > 65) {
             System.out.println("Idoso");
-        }
-        scanner.close();
+        } else {
+            System.out.println("Idade Invalida");
 
+            scanner.close();
+
+        }
     }
- }
+}
