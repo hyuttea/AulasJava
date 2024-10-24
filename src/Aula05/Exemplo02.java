@@ -8,7 +8,6 @@ public class Exemplo02 {
         //a condição é testada no fim do bloco
 
         Scanner scanner = new Scanner(System.in);
-        //exemplo while
 
         int idade; //mesmo não atribuindo valor ele funciona
 

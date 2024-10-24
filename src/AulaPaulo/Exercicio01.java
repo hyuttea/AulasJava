@@ -1,4 +1,4 @@
-package AulaPaulo.Exercicios;
+package AulaPaulo;
 
 import java.util.Scanner;
 

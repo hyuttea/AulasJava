@@ -10,7 +10,7 @@ public class Exemplo01 {
         int idade = 0;
 
         while (idade < 18){  //vai continuar repetindo até receber um valor maior que 18, ai ele para.
-            System.out.println("Digite sua idade: ");
+            System.out.print("Digite sua idade: ");
             idade = scanner.nextInt();
             System.out.println(idade);
         }
