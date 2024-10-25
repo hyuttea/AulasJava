@@ -7,15 +7,7 @@ public class Exercicio04 {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Digite um número inteiro positivo: ");
 
-        int numero = scanner.nextInt();
-        int primo;
 
-        for (int i = 0; i < ; i++) {
-            
         }
-
-            System.out.println();
-
-        } scanner.close();
     }
-}
+
