@@ -12,10 +12,10 @@ public class Exercicio02 {
 
         String letra = scanner.nextLine();
 
-        for (int i = 0; i < 6; i++) {
+        for (int i = 0; i < nomes.length; i++) {
             if (letra.equals(nomes[i])) {
-                aviso = "Letra encontrada";
-                break;
+                aviso = "Letra encontrada na posição " + i;
+               break;
             }
         }
         System.out.println(aviso);
