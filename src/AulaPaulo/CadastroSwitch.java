@@ -2,7 +2,7 @@ package AulaPaulo;
 
 import java.util.Scanner;
 
-public class Exercicio01 {
+public class CadastroSwitch {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
