@@ -13,7 +13,7 @@ public class Exercicio04 {
         Scanner scanner = new Scanner(System.in);
 
         for (int i = 0; i < vetor.length; i++) {
-            System.out.print("Digite o " + (i + 1) + "º número: ");
+            System.out.print("Digite o " + (i + 1) + " número: ");
             vetor = new double[]{scanner.nextDouble()};
             soma += vetor[i];
         }
