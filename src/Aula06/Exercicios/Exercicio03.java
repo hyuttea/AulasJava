@@ -2,7 +2,7 @@ package Aula06.Exercicios;
 
 import java.util.Scanner;
 
-public class Exercicio03 {
+public class  Exercicio03 {
     public static void main(String[] args) {
         boolean[] vetor = new boolean[8];
 
