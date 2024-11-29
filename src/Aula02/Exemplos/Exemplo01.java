@@ -1,8 +1,6 @@
 package Aula02.Exemplos;
 
-import java.util.Arrays;
-
-public class Exemplos {
+public class Exemplo01 {
     public static void main(String[] args) {
     int anoNasc;
     double peso;
