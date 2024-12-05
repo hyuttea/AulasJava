@@ -6,7 +6,6 @@ public class Exercicio08 {
     public static void main(String[] args) {
         System.out.println("Avalie de 1 á 5 quão satisfeito está com o desempenho de Fulano? ");
         Scanner scanner = new Scanner(System.in);
-
         System.out.println("Escolha uma opção ");
         System.out.println("\t1- Precisa Melhorar ");
         System.out.println("\t2- Abaixo da Média ");
