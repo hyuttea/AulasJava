@@ -1,11 +1,18 @@
 package Desafios;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Desafio02 {
+    //DESAFIO AULA 07
+
+    static Scanner scanner = new Scanner(System.in);
+    static String[] cabecalho = {"ID", "Nome", "Telefone", "Email"};
+    static String[][] matrizCadastro = {{"",""}}; //inicializando para nao ter problema no codigo | ultilizando aspas para ser string
+
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        //DESAFIO AULA 07
+        matrizCadastro[0] = cabecalho;
+
 
         String menu = """
                 --------------------------------------
@@ -18,6 +25,7 @@ public class Desafio02 {
                 |------------------------------------|
                 """;
         int opcao;
+
         do {
             System.out.println(menu);
             opcao = scanner.nextInt();
@@ -25,35 +33,65 @@ public class Desafio02 {
 
             switch (opcao) {
                 case 1:
-                    exibirUsuario();
+                    exibirUsuarios();
                     break;
                 case 2:
-                    cadstrarUsuario();
+                    cadastrarUsuarios();
                     break;
                 case 3:
-                    atualizarUsuario();
+                    atualizarUsuarios();
                     break;
                 case 4:
-                    deletarUsuario();
+                    deletarUsuarios();
                     break;
                 case 5:
                     System.out.println("Fim de Programa");
+                    scanner.close();
                     break;
                 default:
                     System.out.println("Opção Inválida!");
             }
-        }  while (opcao!=5);
+        } while (opcao != 5);
     }
-    public static void exibirUsuario(){
-        System.out.println("Exibir");
+
+    private static void exibirUsuarios() {
+        String tabela = "";
+        for (String[] linhas : matrizCadastro){ //Matriz de String
+            for (int coluna = 0; coluna < matrizCadastro[0].length; coluna++){
+                tabela += linhas[coluna] + "\t\t";
+            }
+            tabela += "\n";
+        }
+        System.out.println(tabela);
+
     }
-    public static void cadstrarUsuario(){
-        System.out.println("Cadastrar");
+
+    private static void cadastrarUsuarios() {
+
+        System.out.print("Quantas pessoas você deseja cadastrar?");
+        int qtdPessoas = scanner.nextInt();
+        scanner.nextLine();
+        String[][] novaMatriz = new String[matrizCadastro.length+qtdPessoas][cabecalho.length]; //pegar a matriz global e ver quantas pessoas tem e aumentar a matriz
+        for (int linha = 0; linha < matrizCadastro.length; linha++) {
+            novaMatriz[linha] = Arrays.copyOf(matrizCadastro[linha], matrizCadastro[linha].length);   //o "Arrays" é uma classe com varias ferramentas, o "Arrays.copyOf" pega a matriz inteira e copia
+        }
+        System.out.println("Preencha as informaçoes a seguir");
+        for (int linha = matrizCadastro.length; linha < novaMatriz.length; linha++) {
+            System.out.println(cabecalho[0] + " - " + linha);
+            novaMatriz[linha][0] = String.valueOf(linha); //converte numero para string
+
+            for (int coluna = 1; coluna < cabecalho.length; coluna++) {
+                System.out.print(cabecalho[coluna] + ": ");
+                novaMatriz[linha][coluna] = scanner.nextLine();
+            }
+        }
+        matrizCadastro = novaMatriz;
     }
-    public static void atualizarUsuario(){
-        System.out.println("Atualizar");
+        private static void deletarUsuarios() {
+
+        }
+        private static void atualizarUsuarios() {
+        }
+
     }
-    public static void deletarUsuario(){
-        System.out.println("Deletar");
-    }
-}
+
