@@ -6,24 +6,22 @@ public class Exercicio06 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        int linhas = 2;
-        int colunas = 2;
-
-        int[][] matriz = new int[linhas][colunas];
-        for (int i = 0; i < linhas; i++) {
-            for (int j = 0; j < colunas; j++) {
+        int[][] matriz = new int[2][2];
+        for (int i = 0; i < 2; i++) {
+            for (int j = 0; j < 2; j++) {
 
                 System.out.println("digite o valor para a posição [" + i + "] [" + j + "]");
 
                 matriz[i][j] = scanner.nextInt();
-                break;
 
-                //NAO CONCLUIDO
+                System.out.println("Valor da matriz: " + matriz[i][j]);
+
             }
 
 
+            }
+
         }
     }
-}
 
 
